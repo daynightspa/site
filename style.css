@@ -258,12 +258,14 @@ img {
   width: 100%;
   padding: 8rem 1.5rem 4rem;
   margin: 0 auto;
+  text-align: center;
 }
 
 @media (min-width: 1024px) {
   .hero-content {
     max-width: 1200px;
     padding: 8rem 1.5rem 4rem;
+    text-align: left;
   }
 }
 
@@ -283,6 +285,12 @@ img {
   margin-bottom: 1.5rem;
 }
 
+@media (min-width: 1024px) {
+  .hero-badge {
+    margin-left: 0;
+  }
+}
+
 .hero h1 {
   font-size: clamp(2.5rem, 6vw, 4.5rem);
   font-weight: 700;
@@ -294,12 +302,16 @@ img {
   color: rgba(232, 224, 204, 0.65);
   line-height: 1.8;
   margin-bottom: 2rem;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 @media (min-width: 1024px) {
   .hero-subtitle {
     font-size: 1.25rem;
     max-width: 700px;
+    margin-left: 0;
+    margin-right: 0;
   }
 }
 
@@ -308,6 +320,13 @@ img {
   flex-wrap: wrap;
   gap: 1rem;
   margin-bottom: 2.5rem;
+  justify-content: center;
+}
+
+@media (min-width: 1024px) {
+  .hero-buttons {
+    justify-content: flex-start;
+  }
 }
 
 .hero-location {
@@ -316,6 +335,13 @@ img {
   gap: 0.5rem;
   font-size: 0.875rem;
   color: rgba(232, 224, 204, 0.4);
+  justify-content: center;
+}
+
+@media (min-width: 1024px) {
+  .hero-location {
+    justify-content: flex-start;
+  }
 }
 
 .hero-location svg { color: var(--gold); }
